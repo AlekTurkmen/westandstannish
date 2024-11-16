@@ -1,4 +1,3 @@
-
 (function() {
   "use strict";
 
@@ -226,12 +225,12 @@
    * Testimonials slider
    */
   new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
+    // speed: 600,
+    // loop: true,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false
+    // },
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
@@ -268,6 +267,19 @@
       once: true,
       mirror: false
     })
+  });
+
+  // Add smooth scrolling without changing URL
+  document.querySelectorAll('[data-scroll]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const section = document.getElementById(this.getAttribute('data-scroll'));
+      if (section) {
+        section.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
   });
 
 })()
