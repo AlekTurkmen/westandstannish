@@ -55,10 +55,14 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#why-us">Insurance</a></li>
-          <li class="dropdown"><a class="nav-link scrollto active" href="#service"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+          <li class="dropdown">
+            <div class="d-flex align-items-center">
+              <a class="nav-link scrollto active me-2" href="#service">Services</a>
+              <i class="active dropdown-toggle" role="button" data-bs-toggle="dropdown"></i>
+            </div>
+            <ul class="dropdown-menu">
               <li><a class="nav-link scrollto active" href="#service">Eye Examinations & Contact Lens Fittings</a></li>
-              <li><a class="nav-link scrollto active" href="#service"">Eyewear Consultations</a></li>
+              <li><a class="nav-link scrollto active" href="#service">Eyewear Consultations</a></li>
               <li><a class="nav-link scrollto active" href="#service">Eyewear Adjustments and Repairs</a></li>
             </ul>
           </li>
@@ -87,7 +91,7 @@
           <h1>Welcome to <span>West & Stannish</span></h1>
           <h2>Delivering greatness in vision care for more than 50 years!</h2>
 
-          <div class="btns">
+          <div class="btns d-flex flex-column flex-md-row gap-3">
             <a href="#service" class="btn-menu animated fadeInUp scrollto">Our Services</a>
             <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Schedule an Appointment</a>
           </div>
@@ -234,39 +238,40 @@
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Eyewear Adjustments and Repairs</a>
               </li>
             </ul>
+            <br>
           </div>
           <div class="col-lg-9 mt-4 mt-lg-0">
             <div class="tab-content">
               <div class="tab-pane active show" id="tab-1">
-                <div class="row">
+                <div class="row gy-5">
+                  <div class="col-lg-4 text-center order-1 order-lg-2 mb-4 mb-lg-0">
+                    <img src="assets/img/services/eye-exams.jpg" alt="" class="img-fluid">
+                  </div>
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Eye Examinations & Contact Lens Fittings</h3>
                     <p class="fst-italic"><br>Our dedicated doctor's thorough eye examinations for the entire family includes a prescription for spectacles and, if desired, contact lenses including soft and rigid gas permeables. If you are new to contact lenses, we will teach you how to wear and handle your contact lenses correctly and safely. In addition, your eyes will be tested for cataracts, glaucoma and ocular disorders. If you are suffering from an eye infection, dry eyes or other eye problems, a medical prescription will be provided along with follow-up care. Our doctor also co-manages with our area's distinguished ophthalmologists for your lasik, cataract and ocular needs. We are here to help address, diagnose and alleviate all your vision and ocular concerns.</p>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                      <img src="assets/img/services/eye-exams.jpg" alt="" class="img-fluid">
-                    </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-2">
-                <div class="row">
+                <div class="row gy-5">
+                  <div class="col-lg-4 text-center order-1 order-lg-2 mb-4 mb-lg-0">
+                    <img src="assets/img/services/consultations.jpg" alt="" class="img-fluid">
+                  </div>
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Eyewear Consultations</h3>
                     <p class="fst-italic"><br>Our experienced and licensed opticians take the time to offer expert advice in the selection of your eyeglasses from start to finish including a properly fitted frame and individually designed lenses for your specific prescription and visual needs. They carefully explain how different eyeglass frames and lens selections can impact your vision, answer any questions you might have and supply you with the most up-to-date information in order to keep your eyes healthy. Specializing in complex high prescriptions for babies to mature adults, our opticians greatest satisfaction comes from improving vision and enhancing the quality of life for your entire family.</p>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/services/consultations.jpg" alt="" class="img-fluid">
-                  </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-3">
-                <div class="row">
+                <div class="row gy-5">
+                  <div class="col-lg-4 text-center order-1 order-lg-2 mb-4 mb-lg-0">
+                    <img src="assets/img/services/adjustments.jpg" alt="" class="img-fluid">
+                  </div>
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Eyewear Adjustments and Repairs</h3>
                     <p class="fst-italic"><br>Our licensed opticians expertly fit and adjust your eyewear for optimal vision and comfort along with recommending or making any necessary eyeglass repairs. Our goal is to build long-term relationships by providing attention to each customer's individual vision needs. We invite you to come to our store and receive the quality attention that you deserve.</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/services/adjustments.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -289,8 +294,8 @@
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">All Brands</li>
-              <li data-filter=".filter-top">Top Brands</li>
+              <li data-filter="*">All Brands</li>
+              <li data-filter=".filter-top" class="filter-active">Top Brands</li>
             </ul>
           </div>
         </div>

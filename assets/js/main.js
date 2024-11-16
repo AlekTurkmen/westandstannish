@@ -173,7 +173,8 @@
     if (menuContainer) {
       let menuIsotope = new Isotope(menuContainer, {
         itemSelector: '.menu-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        filter: '.filter-top'
       });
 
       let menuFilters = select('#menu-flters li', true);
@@ -277,6 +278,34 @@
       if (section) {
         section.scrollIntoView({
           behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    
+    dropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        const dropdownParent = this.closest('.dropdown');
+        const dropdownMenu = dropdownParent.querySelector('ul');
+        
+        // Toggle visibility
+        if (dropdownMenu.style.display === 'block') {
+          dropdownMenu.style.display = 'none';
+        } else {
+          dropdownMenu.style.display = 'block';
+        }
+      });
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.dropdown')) {
+        document.querySelectorAll('.dropdown ul').forEach(menu => {
+          menu.style.display = 'none';
         });
       }
     });

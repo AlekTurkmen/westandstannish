@@ -1732,3 +1732,15 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  /* Adds vertical spacing between buttons */
+  }
+  
+  .btns a {
+    width: fit-content;  /* Optional: Makes buttons only as wide as their content */
+  }
+}
