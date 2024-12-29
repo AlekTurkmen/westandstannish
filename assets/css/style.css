@@ -433,11 +433,13 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero.png") center center;
+  background: url("../img/hero.jpg") center center;
   background-size: cover;
-  background-position: center center;
   position: relative;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #hero:before {
@@ -451,22 +453,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .container {
-  padding-top: 110px;
+  padding-top: 0;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 992px) {
   #hero .container {
-    padding-top: 98px;
+    padding-top: 0;
   }
 }
 
 #hero h1 {
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 #hero h1 span {
@@ -475,12 +480,17 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 10px 0 0 0;
+  margin-bottom: 30px;
   font-size: 22px;
+  text-align: center;
 }
 
 #hero .btns {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 #hero .btn-menu, #hero .btn-book {
@@ -495,6 +505,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   color: white;
   border: 2px solid #cda45e;
+  text-align: center;
+  min-width: 200px;
 }
 
 #hero .btn-menu:hover, #hero .btn-book:hover {
@@ -600,13 +612,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+  #hero {
+    height: 100vh;
   }
+  
+  #hero .container {
+    padding: 0 15px;
+  }
+
+  #hero h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
+  }
+  
+  #hero .btns {
+    margin-top: 20px;
   }
 }
 
@@ -836,25 +861,50 @@ section {
 --------------------------------------------------------------*/
 .why-us .box {
   padding: 20px;
+  background: #1a1814;
   text-align: center;
   height: 100%;
-  background: rgba(12, 11, 9, 0.6);
-  border-radius: 5px;
 }
 
 .why-us .box h4 {
+  font-size: 16px;
+  font-weight: 500;
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  font-weight: 600;
   color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
-.why-us .box small {
-  color: #cda45e;
-  font-size: 12px;
-  display: block;
-  margin-top: 5px;
+.why-us .row {
+  --bs-gutter-x: 1rem;
+  --bs-gutter-y: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .why-us .col-lg-2 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@media (max-width: 991px) {
+  .why-us .col-lg-2 {
+    width: 33.333%;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-us .col-lg-2 {
+    width: 50%;
+  }
+  
+  .why-us .box {
+    padding: 15px;
+  }
+  
+  .why-us .box h4 {
+    font-size: 14px;
+  }
 }
 
 .why-us .insurance-footer {
@@ -1348,6 +1398,18 @@ section {
   background: #0c0b09;
   position: relative;
   overflow: hidden;
+  height: 400px;
+}
+
+.chefs .member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.chefs .member img[src*="laura.jpg"] {
+  object-position: top;
 }
 
 .chefs .member .member-info {
