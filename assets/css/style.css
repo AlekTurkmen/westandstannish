@@ -433,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero.jpg") center center;
+  background: url("../img/hero.jpeg") center center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -759,7 +759,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center;
+  background: url("../img/about-bg.webp") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -1438,10 +1438,10 @@ section {
 }
 
 .chefs .member .member-info-content span {
+  color: #fff !important;
   font-style: italic;
   display: block;
   font-size: 18px;
-  color: #cda45e;
 }
 
 .chefs .member .social {
@@ -1806,4 +1806,66 @@ section {
   .btns a {
     width: fit-content;  /* Optional: Makes buttons only as wide as their content */
   }
+}
+
+.rotate-ming {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  margin: 2rem 0;  /* Add some margin to prevent overlap */
+}
+
+.hours .appointment-available {
+  color: #cda45e;
+  font-size: 0.85em;
+  margin-left: 10px;
+  border: 1px solid #cda45e;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.hours .appointment-notice {
+  color: #cda45e;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+}
+
+.hours-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;  /* Add space between elements */
+}
+
+.hours-list li span:first-child {
+  min-width: 100px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hours-list li .time {
+  min-width: 120px;
+  color: #fff;
+}
+
+/* Style for the asterisk */
+.hours-list li[data-asterisk]::after {
+  content: "*";
+  color: #cda45e;
+  margin-left: 4px;
+}
+
+.hours .appointment-notice {
+  color: #cda45e;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 15px;
+  text-align: center;
 }
