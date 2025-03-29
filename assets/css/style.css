@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover i {
-  color: #444444;
+  color: #1a1814;
 }
 
 .back-to-top.active {
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .book-a-table-btn:hover {
   background: #cda45e;
-  color: #fff;
+  color: #1a1814;
 }
 
 @media (max-width: 992px) {
@@ -297,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #cda45e;
+  color: #a57f46;
 }
 
 .navbar .dropdown:hover > ul {
@@ -388,7 +388,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #cda45e;
+  color: #a57f46;
 }
 
 .navbar-mobile .getstarted {
@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #cda45e;
+  color: #a57f46;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -511,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .btn-menu:hover, #hero .btn-book:hover {
   background: #cda45e;
-  color: #fff;
+  color: #1a1814;
 }
 
 #hero .btn-book {
@@ -1219,10 +1219,6 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
 .book-a-table .php-email-form .sent-message {
   display: none;
   color: #fff;
@@ -1288,7 +1284,7 @@ section {
   background: #cda45e;
   border: 0;
   padding: 10px 35px;
-  color: #fff;
+  color: #1a1814;
   transition: 0.4s;
   border-radius: 50px;
 }
@@ -1615,7 +1611,7 @@ section {
   background: #cda45e;
   border: 0;
   padding: 10px 35px;
-  color: #fff;
+  color: #1a1814;
   transition: 0.4s;
   border-radius: 50px;
 }
@@ -1698,8 +1694,7 @@ section {
 
 #footer .footer-top .social-links a:hover {
   background: #cda45e;
-  color: #fff;
-  text-decoration: none;
+  color: #1a1814;
 }
 
 #footer .footer-top h4 {
@@ -1745,7 +1740,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #cda45e;
+  color: #a57f46;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1775,7 +1770,7 @@ section {
   font-size: 16px;
   padding: 0 20px 2px 20px;
   background: #cda45e;
-  color: #fff;
+  color: #1a1814;
   transition: 0.3s;
   border-radius: 50px;
 }
